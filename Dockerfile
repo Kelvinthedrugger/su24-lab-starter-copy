@@ -28,10 +28,10 @@ RUN echo "export PS1=\"\[\e[0;31m\]\u@\[\e[m\e[0;34m\]\h\[\e[m \e[0;32m\] \w[\!]
 
 
 ADD . /proj
+WORKDIR /proj
+#RUN mkdir -p /workspace/projects
 
-RUN mkdir -p /workspace/projects
-
-WORKDIR /workspace/projects
+#WORKDIR /workspace/projects
 
 
 CMD ["bash"]
