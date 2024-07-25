@@ -5,7 +5,7 @@
 int main() {
   // TODO: allocate memory to store the string "hello"
   // Hint: how many bytes do we need to store this string?
-  char *hello_str[6];
+  char hello_str[6];
 
   // TODO: store the characters one at a time
   // Hint: don't forget the null terminator
@@ -23,10 +23,10 @@ int main() {
   printf("prints hello: %s\n", hello_str);
 
   // TODO: print the length of hello_str
-  printf("length of hello: %lu\n", ______(hello_str));
+  printf("length of hello: %lu\n", strlen(hello_str));
 
   // TODO: allocate memory to store the string "world"
-  char *world_str[6];
+  char world_str[6];
 
   // TODO: fill in the type
   // Note: this automatically stores the string "world" in static memory
@@ -46,11 +46,11 @@ int main() {
   printf("address of world_str: %p\n", world_str);
 
   // TODO: compute the address of the letter r using world_str
-  char *ptr_to_r = world_str + 3;
+  char *ptr_to_r = world_str + 2;
   printf("address of 'r': %p\n", ptr_to_r);
 
   // TODO: allocate memory to store the string "hello world"
-  char *hello_world_str[12];
+  char hello_world_str[12];
 
   // TODO: use strcpy and hello_str to store
   //       the string "hello" into hello_world_str
